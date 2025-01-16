@@ -122,7 +122,7 @@ If you use this code in your research, please cite our paper:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under CC BY-NC 4.0 - see the [LICENSE](LICENSE) file for details
 
 ## Contact
 
