@@ -2,6 +2,7 @@
 
 3DSYN is a MATLAB-based tool for synthesizing 3D microstructure images using a patch-based sampling and reconstruction approach. This repository contains the implementation of the methodology described in our paper "Structure-property relationships in fibrous meniscal tissue through image-based augmentation".
 
+![Reconstruction process](img/Reconstruction.gif)
 ## Features
 
 - Adaptive 3D image synthesis for fibrous and porous materials
@@ -71,6 +72,8 @@ reconstructed_volume = TDSYN('InputVolume', input_volume, ...
 ### Demo1: Basic Reconstruction
 `Demo1.m` demonstrates the basic functionality of 3DSYN by creating different realizations of meniscal tissue with the same target parameters but different random seeds. This helps visualize the stochastic nature of the synthesis process while maintaining consistent structural properties.
 
+![Demo1 - Different Realizations](img/Meniscal_tissue_realiztions.png)
+
 Key features:
 - Loads sample tissue data
 - Performs two reconstructions with different random seeds
@@ -79,7 +82,7 @@ Key features:
 
 ### Demo2: Porosity Control
 `Demo2.m` showcases the ability to control porosity through the α parameter. It generates reconstructions with different target porosity values while keeping other parameters constant.
-
+![Demo2 - Porosity Control](img/Porosity.png)
 Key features:
 - Generates reconstructions with α values of 0.4, 0.5, and 0.6
 - Demonstrates the effect of porosity control on final structure
@@ -87,7 +90,7 @@ Key features:
 
 ### Demo3: Surface Area Control
 `Demo3.m` demonstrates control over specific surface area using the β parameter. This is particularly useful for applications where surface area to volume ratio is critical.
-
+![Demo3 - Surface Area Control](img/Specific_surface.png)
 Key features:
 - Creates reconstructions with β values of 0.4, 0.5, and 0.6
 - Calculates surface area using perimeter analysis
