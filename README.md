@@ -8,9 +8,7 @@
 
 - Adaptive 3D image synthesis for fibrous and porous materials
 - Control over key microstructural parameters (porosity, specific surface area, pore size)
-- Efficient patch-based reconstruction algorithm
-- Support for various transformations including rotation and morphological operations
-- Built-in visualization tools
+- Efficient vectorized patch-based reconstruction algorithm
 - Memory-efficient processing of large 3D volumes
 
 ## Requirements
@@ -128,6 +126,13 @@ If you use this code in your research, please cite our paper:
 ## License
 
 This project is licensed under CC BY-NC 4.0 - see the [LICENSE](LICENSE) file for details
+
+## AI Assistance Disclosure
+This repository's documentation and code have been enhanced with the assistance of AI tools. Specifically:
+- Documentation preparation was aided by AI language models
+- Code formatting and style improvements were made with AI assistance
+- The core algorithms and implementation remain original work
+
 
 ## Contact
 
