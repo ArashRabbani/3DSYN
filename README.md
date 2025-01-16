@@ -8,14 +8,14 @@ Below is an example of the micros-structered materials that can be generated usi
 ### Double Distance Map Transformation
 
 ![Reconstruction Process Overview](img/figure_1.jpg)
-*Figure 1: Core reconstruction methodology: (a) Schematic workflow illustrating the transformation from binary images to double distance maps, patch sampling, and reconstruction process. (b) Comparative visualization showing original reconstruction methods vs our approach with weighted averaging. (c) Detailed view demonstrating the effectiveness of our approach in maintaining structural continuity across patch boundaries.*
+*Figure 1: Schematics of the image reconstruction process, including breaking down the double distance map into small samples and rebuilding by putting them back together in a new order (a), a 2D slice of the double-distanced geometry (b), an examples of 2D reconstruction via Le Meur et al. approach (c), an examples of 2D reconstruction via Efros and Freemain approach (d), ours without weighted averaging (e) and ours with weighted averaging (f). A magnified region (g-k) shows detailed comparison of the reconstruction quality, with yellow dashed circles highlighting areas where discontinuities are visible in existing methods (h,i,j) but are effectively addressed by our weighted averaging approach (k).*
 
 The reconstruction process begins with a double distance map transformation that converts binary images into a more spatially correlated representation. This transformation creates a continuous field where values near 1 indicate proximity to phase interfaces, enabling smoother interpolation between structural features. In the implementation, I₀ represents the binary input image (solid=1, void=0), and d̂ is the normalized Euclidean distance transform.
 
 ### Feature-Controlled Synthesis
 
 ![Statistical Analysis and Control](img/figure_2.jpg)
-*Figure 2: Feature space analysis and control demonstration: (a-c) Distribution analysis of key morphological properties showing statistical preservation in reconstructed samples. (d) 3D visualization of reconstructed geometries with varying control parameters. (e) Feature space mapping showing the distribution of generated samples.*
+*Figure 2: Comparison of pore network statistics for the original and an unbiased reconstruction of the tissue sample #1 (a-e), 3D rendering of both geometries (f, g), Unbiased (h), large-pore (i) and low-porosity (j) realizations of tissue sample #1 and their preferred data points in feature space of α (normalized porosity), β (specific surface area), and γ (maximum pore size).*
 
 The synthesis process is controlled by three key parameters:
 - α (alpha): Controls porosity
