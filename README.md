@@ -2,7 +2,9 @@
 
 3DSYN is a MATLAB-based tool for synthesizing 3D microstructure images using an adaptive patch-based sampling and reconstruction approach. This repository implements the methodology described in our paper "Structure-property relationships in fibrous meniscal tissue through image-based augmentation", published in Philosophical Transactions of the Royal Society A.
 Below is an example of the micros-structered materials that can be generated using this tool. 
-![Reconstruction process](img/Reconstruction.gif)
+![Reconstruction process|50%](img/Reconstruction.gif)
+
+
 ## Methodology
 
 ### Double Distance Map Transformation
