@@ -1,8 +1,28 @@
 # 3DSYN: 3D Microstructure Image Synthesis
 
-3DSYN is a MATLAB-based tool for synthesizing 3D microstructure images using a patch-based sampling and reconstruction approach. This repository contains the implementation of the methodology described in our paper "Structure-property relationships in fibrous meniscal tissue through image-based augmentation".
-
+3DSYN is a MATLAB-based tool for synthesizing 3D microstructure images using an adaptive patch-based sampling and reconstruction approach. This repository implements the methodology described in our paper "Structure-property relationships in fibrous meniscal tissue through image-based augmentation", published in Philosophical Transactions of the Royal Society A.
+Below is an example of the micros-structered materials that can be generated using this tool. 
 ![Reconstruction process](img/Reconstruction.gif)
+## Methodology
+
+### 1. Double Distance Map Transformation
+
+![Reconstruction Process Overview](img/figure_1.jpg)
+*Figure 1: Core reconstruction methodology: (a) Schematic workflow illustrating the transformation from binary images to double distance maps, patch sampling, and reconstruction process. (b) Comparative visualization showing original reconstruction methods vs our approach with weighted averaging. (c) Detailed view demonstrating the effectiveness of our approach in maintaining structural continuity across patch boundaries.*
+
+The reconstruction process begins with a double distance map transformation that converts binary images into a more spatially correlated representation. This transformation creates a continuous field where values near 1 indicate proximity to phase interfaces, enabling smoother interpolation between structural features. In the implementation, I₀ represents the binary input image (solid=1, void=0), and d̂ is the normalized Euclidean distance transform.
+
+### 2. Feature-Controlled Synthesis
+
+![Statistical Analysis and Control](img/figure_2.jpg)
+*Figure 2: Feature space analysis and control demonstration: (a-c) Distribution analysis of key morphological properties showing statistical preservation in reconstructed samples. (d) 3D visualization of reconstructed geometries with varying control parameters. (e) Feature space mapping showing the distribution of generated samples.*
+
+The synthesis process is controlled by three key parameters:
+- α (alpha): Controls porosity
+- β (beta): Controls specific surface area
+- γ (gamma): Controls pore size
+
+For each new reconstruction, patches are selected based on their position in this 3D feature space, allowing targeted variations while maintaining structural coherence.
 
 ## Features
 
