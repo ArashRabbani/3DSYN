@@ -5,14 +5,14 @@ Below is an example of the micros-structered materials that can be generated usi
 ![Reconstruction process](img/Reconstruction.gif)
 ## Methodology
 
-### 1. Double Distance Map Transformation
+### Double Distance Map Transformation
 
 ![Reconstruction Process Overview](img/figure_1.jpg)
 *Figure 1: Core reconstruction methodology: (a) Schematic workflow illustrating the transformation from binary images to double distance maps, patch sampling, and reconstruction process. (b) Comparative visualization showing original reconstruction methods vs our approach with weighted averaging. (c) Detailed view demonstrating the effectiveness of our approach in maintaining structural continuity across patch boundaries.*
 
 The reconstruction process begins with a double distance map transformation that converts binary images into a more spatially correlated representation. This transformation creates a continuous field where values near 1 indicate proximity to phase interfaces, enabling smoother interpolation between structural features. In the implementation, I₀ represents the binary input image (solid=1, void=0), and d̂ is the normalized Euclidean distance transform.
 
-### 2. Feature-Controlled Synthesis
+### Feature-Controlled Synthesis
 
 ![Statistical Analysis and Control](img/figure_2.jpg)
 *Figure 2: Feature space analysis and control demonstration: (a-c) Distribution analysis of key morphological properties showing statistical preservation in reconstructed samples. (d) 3D visualization of reconstructed geometries with varying control parameters. (e) Feature space mapping showing the distribution of generated samples.*
