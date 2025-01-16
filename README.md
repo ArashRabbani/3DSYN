@@ -100,7 +100,7 @@ Key features:
 - Generates reconstructions with γ values of 0.4, 0.5, and 0.6
 - Calculates maximum pore size using distance transform
 - Visualizes the effect of γ on pore structure
-
+![Demo4 - Pore Size Control](img/PoreSize.png)
 ## Support Functions
 
 The `funcs` directory contains essential support functions:
