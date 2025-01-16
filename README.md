@@ -24,7 +24,7 @@ The synthesis process is controlled by three key parameters:
 - β (beta): Controls specific surface area
 - γ (gamma): Controls pore size
 
-For each new reconstruction, patches are selected based on their position in this 3D feature space, allowing targeted variations while maintaining structural coherence.
+For each new reconstruction, patches are selected based on their position in this 3D feature space, allowing targeted variations while maintaining structural coherence and material texture.
 
 ## Features
 
